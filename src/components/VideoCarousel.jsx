@@ -115,6 +115,7 @@ const VideoCarousel = () => {
   }, [videoId, startPlay]);
 
   useEffect(() => {
+    console.log(loadedData)
     if (loadedData.length > 3) {
       if (!isPlaying) {
         videoRef.current[videoId].pause();
